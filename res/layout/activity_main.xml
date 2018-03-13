@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.a611solutions.emergencynumbers.MainActivity"
+    android:background="@drawable/mapbgtrd">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emergency_numbers"
+        android:id="@+id/titleText"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_info_details"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/personInfoButton"
+        android:elevation="0dp"
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/globebluehi"
+        android:id="@+id/frontGlobe"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/bottomRow">
+
+        <Button
+            android:text="@string/north_america"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/naButton"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_light"
+            android:textColor="@android:color/background_light"/>
+
+        <Button
+            android:text="@string/oceania"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ocButton"
+            android:layout_weight="1"
+            android:background="@android:color/holo_purple"
+            android:textColor="@android:color/background_light"/>
+
+        <Button
+            android:text="@string/south_america"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/saButton"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/background_light"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomRow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/topRow">
+
+        <Button
+            android:text="@string/africa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/afButton"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            style="@style/Widget.AppCompat.Button"
+            android:textColor="@android:color/background_light"
+            android:visibility="visible"/>
+
+        <Button
+            android:text="@string/asia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/asButton"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:textColor="@android:color/background_light"/>
+
+        <Button
+            android:text="@string/europe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/euButton"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/background_light"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/by_611_solutions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_below="@+id/personInfoButton"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_light"/>
+
+    <TextView
+        android:text="@string/tap_a_continent_to_get_started"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/frontGlobe"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_compass"
+        android:id="@+id/compasButton"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
